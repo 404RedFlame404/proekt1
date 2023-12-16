@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link th:href="@{/style.css}" rel="stylesheet">
+</head>
+<body>
+<div>
+<table>
+    <tr th:each="apartList: ${apartList}">
+        <td th:text="${apartList.id}"></td>
+        <td th:text="${apartList.type}"></td>
+        <td th:text="${apartList.room}"></td>
+        <td th:text="${apartList.price}"></td>
+        <td th:text="${apartList.owner.name}"></td>
+    </tr>
+</table>
+</div>
+<div class="button1">
+    <form action="./add" method="post">
+        <button class="button11" type="submit">Add</button>
+    </form>
+</div>
+</body>
+</html>

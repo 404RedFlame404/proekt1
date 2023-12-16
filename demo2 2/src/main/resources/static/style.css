@@ -1,0 +1,19 @@
+body{
+    background-color: aqua;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+table, td, th {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+button{
+    background-color: #07c4e5;
+}
+button.button11{
+    background-color: #00ff7a;
+    width: 150px;
+    height: 40px;
+}
